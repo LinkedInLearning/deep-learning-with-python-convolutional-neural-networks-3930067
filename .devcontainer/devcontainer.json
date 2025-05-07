@@ -30,8 +30,10 @@
 	],
 	"remoteUser": "vscode",
 	"onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc", //Set Terminal Prompt to $
-	 "postCreateCommand": [
-		 "sh .devcontainer/startup.sh",
-		 "apt-get update && apt-get install -y libgl1-mesa-glx"
-	 ]
+	"features": {
+		"ghcr.io/devcontainers/features/apt-packages:1": {
+			"packages": ["libgl1-mesa-glx"]
+		}
+	},
+	"postCreateCommand": "sh .devcontainer/startup.sh"
 }
