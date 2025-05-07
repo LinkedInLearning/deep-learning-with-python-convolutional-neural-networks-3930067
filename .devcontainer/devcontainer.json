@@ -23,6 +23,7 @@
 		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
 		"python.linting.pylintArgs": ["--disable=C0111"]
 	},
+	"hostRequirements": { "memory": "16gb"},
 	"extensions": [
 		"ms-python.python",
 		"ms-python.vscode-pylance",
