@@ -1,1 +1,5 @@
 requests>=2.28
+ultralytics
+matplotlib
+Pillow
+opencv-python
