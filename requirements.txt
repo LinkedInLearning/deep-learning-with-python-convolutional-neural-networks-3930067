@@ -1,4 +1,4 @@
 requests>=2.28
 ultralytics
 matplotlib
-PIL
+Pillow
